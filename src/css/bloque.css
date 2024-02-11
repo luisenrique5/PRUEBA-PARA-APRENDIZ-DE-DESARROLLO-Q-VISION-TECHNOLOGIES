@@ -1,0 +1,85 @@
+.container {
+    display: flex;
+}
+
+.main-card {
+    width: 60%;
+    padding: 20px;
+}
+
+.side-card {
+    width: 40%;
+    padding: 20px;
+}
+
+.card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Nuevos estilos para el diseño de las tarjetas con la imagen más grande en el lado izquierdo */
+.container {
+    flex-direction: row;
+}
+
+.main-card {
+    width: 60%;
+    padding: 20px;
+}
+
+.side-card {
+    width: 40%;
+    padding: 20px;
+}
+
+.card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        flex-direction: row;
+    }
+
+    .main-card {
+        width: 60%;
+        padding: 20px;
+    }
+
+    .side-card {
+        width: 40%;
+        padding: 20px;
+    }
+
+    .card {
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+
+    .card img {
+        max-width: 100%;
+        height: auto;
+    }
+}

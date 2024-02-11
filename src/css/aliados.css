@@ -1,0 +1,26 @@
+/* estilos para los aliados */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center; /* Centra el texto en el cuerpo de la página */
+}
+
+.aliados {
+    display: flex;
+    justify-content: center; /* Centra los logos horizontalmente */
+    align-items: center; /* Centra los logos verticalmente */
+    flex-wrap: wrap; /* Permite ajustar automáticamente la posición de los logos si no caben en una sola línea */
+}
+
+.aliado {
+    width: 100px; /* Ancho inicial de los logos */
+    margin: 10px; /* Espacio entre los logos */
+    transition: all 0.3s ease;
+}
+
+.aliado:hover {
+    transform: scale(1.1);
+}
+
+h1, p {
+    margin: 10px; /* Espacio alrededor del título y del texto */
+}
