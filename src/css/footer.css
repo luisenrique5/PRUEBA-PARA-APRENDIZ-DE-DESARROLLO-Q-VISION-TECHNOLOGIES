@@ -1,0 +1,47 @@
+footer {
+  background-image: url(https://izyacademy.com/theme/edumy/images/ccnPattern.png);
+  background-repeat: repeat repeat;
+  background-size: 72px;
+  background-color: #212e71;
+}
+
+.footer_one {
+  background-color: transparent;
+  color: rgb(188, 198, 222);
+  padding: 80px 0;
+}
+
+.footer_middle_area {
+  background-color: transparent;
+  padding: 0 !important;
+  border-top: 1px solid rgba(255, 255, 255, .1);
+}
+
+.pb25 {
+  padding-bottom: 25px;
+}
+
+.pt25 {
+  padding-top: 25px;
+}
+
+.col-md-4 {
+  display: flex;
+}
+
+.pb15 {
+  padding-bottom: 15px;
+}
+
+.pt15 {
+  padding-top: 15px;
+}
+
+ul.social-icons li a {
+  color: #ffffff !important;
+
+}
+
+#copyright {
+  color: #ffffff !important;
+}

@@ -1,21 +1,14 @@
-body {
-    margin: 10;
-    font-family: 'Open Sans', sans-serif;
-}
-
 .header {
-    background-image: url('../Recursos/Encabezado.png');
+    background-image: url('../recursos/encabezado.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    position: relative; /* Añade position: relative para posicionar elementos secundarios */
+    position: relative;
     color: #fff;
     text-align: center;
-    padding: 60px 0;
-    
+    padding: 80px;
+    height: 300px;
 
-
-    /* Añade un pseudo-elemento para la superposición oscura */
     &::before {
         content: '';
         position: absolute;
@@ -23,19 +16,30 @@ body {
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: rgba(6, 66, 145, 0.3); /* Ajusta el valor según tu preferencia (0 a 1) */
+        background-color: rgba(6, 66, 145, 0.5);
     }
 }
-.header h1,
+
+.header h1 {
+    position: relative;
+    z-index: 1;
+    font-family: 'Nunito', sans-serif;
+}
+
 .header h2 {
     position: relative;
-    z-index: 1; /* Asegura que el texto esté por encima de la capa oscura */
+    z-index: 1;
+    font-size: 26px;
+    position: relative;
+    z-index: 1;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 
 .logo {
     position: absolute;
-    top: 20px;
+    top: 15px;
     left: 20px;
 }
 
@@ -44,10 +48,9 @@ body {
 }
 
 nav {
-  
     position: absolute;
-    top: 35px;
-    left: 200px;
+    top: 25px;
+    left: 250px;
 }
 
 nav ul {
@@ -66,65 +69,70 @@ nav ul li a {
     text-decoration: none;
 }
 
+/* login */
+
 .login {
     position: absolute;
-    top: 20px;
+    top: 25px;
     right: 20px;
 }
 
-.login img {
-    height: 20px;
-    margin-right: 5px;
-}
+#iniciarSesion {
+    padding: 0;
 
-.search-icon {
-    position: absolute;
-    top: 20px;
-    right: 70px;
 }
 
 .search-icon img {
     height: 20px;
 }
 
-h1 {
-    font-weight: bold;
-    font-size: 36px; /* Tamaño de fuente aumentado */
-    margin-bottom: 10px; /* Espacio inferior aumentado */
-}
-
-h2 {
-    font-size: 24px; /* Tamaño de fuente aumentado */
-}
-
-@media screen and (max-width: 600px) {
-    .logo,
-    .login,
-    .search-icon,
-    nav {
-        position: static;
-        margin: 0 auto; /* Alinear el menú al centro en dispositivos móviles */
-    }
-
-    nav ul {
-        display: block;
-        text-align: center;
-    }
-
-    nav ul li {
-        display: inline-block;
-        margin: 10px 0;
-    }
-    /* Estilos para el menú desplegable */
-
-    
-}
 .btn-link {
-    color: white !important; /* Establece el color del texto en blanco */
-    text-decoration: none !important; /* Elimina cualquier decoración de texto, como el subrayado */
+    color: white !important;
+    /* Establece el color del texto en blanco */
+    text-decoration: none !important;
+    /* Elimina cualquier decoración de texto, como el subrayado */
 }
 
 .btn-link:hover {
-    color: white !important; /* Mantén el color blanco al pasar el ratón por encima */
-    text-decoration: none !important; /* Elimina cualquier decoración de texto al pasar el ratón por encima */
+    color: white !important;
+    text-decoration: none !important;
+}
+
+#modalIniciarSesionLabel {
+    color: #1D3A6C !important;
+    text-align: center !important;
+    position: relative;
+    z-index: 1;
+    font-family: 'Nunito', sans-serif !important;
+    font-size: 26px;
+    padding: 0;
+    margin-top: 40px;
+    margin-left: auto;
+}
+
+#closeModal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+#email,
+#password {
+    width: calc(100% - 80px);
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s;
+}
+
+#accederBoton {
+    width: calc(100% - 90px);
+    padding: 10px;
+    background-color: #1D3A6C;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 50px;
 }

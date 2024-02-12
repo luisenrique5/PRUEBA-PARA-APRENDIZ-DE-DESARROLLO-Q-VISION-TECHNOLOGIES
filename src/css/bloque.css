@@ -1,85 +1,63 @@
-.container {
-    display: flex;
+#novedades {
+    color: #1D3A6C;
+    text-align: left;
+    font-size: 26px;
+    position: relative;
+    z-index: 1;
+    font-family: 'Nunito', sans-serif;
+    margin-left: 170px;
 }
 
-.main-card {
-    width: 60%;
-    padding: 20px;
+#imagenPrincipal {
+    width: 300px;
+    height: 450px;
+    border-radius: 5%;
 }
 
-.side-card {
-    width: 40%;
-    padding: 20px;
+#imagen1,
+#imagen2 {
+    width: 250px;
+    height: 250px;
+    border-radius: 5%;
 }
 
-.card {
-    border: 1px solid #ccc;
-    padding: 10px;
-    margin-bottom: 10px;
+#tituloImagenesPrincipal {
+    width: 400px;
+    height: 40px;
+    background-color: #1D3A6C;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px auto;
+    font-size: 26px;
+    line-height: 40px; 
+    transition: background-color 0.3s;
+    font-family: 'Nunito', sans-serif;
 }
 
-h2 {
-    text-align: center;
+#tituloImagenes {
+    width: 250px;
+    background-color: #1D3A6C;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px auto;
+    font-size: 26px;
+    transition: background-color 0.3s;
+    font-family: 'Nunito', sans-serif;
+}
+#textoImagenesPrincipal{
+    width: 400px;
+    text-align: left;
+    margin: 20px auto;
 }
 
-.card img {
-    max-width: 100%;
-    height: auto;
-}
-
-/* Nuevos estilos para el diseño de las tarjetas con la imagen más grande en el lado izquierdo */
-.container {
-    flex-direction: row;
-}
-
-.main-card {
-    width: 60%;
-    padding: 20px;
-}
-
-.side-card {
-    width: 40%;
-    padding: 20px;
-}
-
-.card {
-    border: 1px solid #ccc;
-    padding: 10px;
-    margin-bottom: 10px;
-}
-
-h2 {
-    text-align: center;
-}
-
-.card img {
-    max-width: 100%;
-    height: auto;
-}
-
-@media screen and (min-width: 768px) {
-    .container {
-        flex-direction: row;
-    }
-
-    .main-card {
-        width: 60%;
-        padding: 20px;
-    }
-
-    .side-card {
-        width: 40%;
-        padding: 20px;
-    }
-
-    .card {
-        border: 1px solid #ccc;
-        padding: 10px;
-        margin-bottom: 10px;
-    }
-
-    .card img {
-        max-width: 100%;
-        height: auto;
-    }
+#textoImagenes{
+    width: 250px;
+    text-align: left;
+    margin: 20px auto;
+    padding: 0;
+    margin-bottom: 0;
 }

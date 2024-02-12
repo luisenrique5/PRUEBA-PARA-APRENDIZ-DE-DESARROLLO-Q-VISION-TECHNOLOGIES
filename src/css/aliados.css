@@ -1,19 +1,25 @@
 /* estilos para los aliados */
 body {
     font-family: Arial, sans-serif;
-    text-align: center; /* Centra el texto en el cuerpo de la página */
+    text-align: center;
+    /* Centra el texto en el cuerpo de la página */
 }
 
-.aliados {
+#imagenesAliados {
     display: flex;
-    justify-content: center; /* Centra los logos horizontalmente */
-    align-items: center; /* Centra los logos verticalmente */
-    flex-wrap: wrap; /* Permite ajustar automáticamente la posición de los logos si no caben en una sola línea */
+    justify-content: center;
+    /* Centra los logos horizontalmente */
+    align-items: center;
+    /* Centra los logos verticalmente */
+    flex-wrap: wrap;
+    /* Permite ajustar automáticamente la posición de los logos si no caben en una sola línea */
 }
 
 .aliado {
-    width: 100px; /* Ancho inicial de los logos */
-    margin: 10px; /* Espacio entre los logos */
+    width: 100px;
+    /* Ancho inicial de los logos */
+    margin: 10px;
+    /* Espacio entre los logos */
     transition: all 0.3s ease;
 }
 
@@ -21,6 +27,21 @@ body {
     transform: scale(1.1);
 }
 
-h1, p {
-    margin: 10px; /* Espacio alrededor del título y del texto */
+#tituloAliados {
+    color: #1D3A6C;
+    text-align: center;
+    font-size: 26px;
+    position: relative;
+    z-index: 1;
+    font-family: 'Nunito', sans-serif;
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+
+#textoAliados {
+    color: #1D3A6C;
+    text-align: center;
+    font-size: 16px;
+    position: relative;
+    z-index: 1;
 }
